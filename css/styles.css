@@ -5,6 +5,7 @@
   --green-light: #B0CE88;
   --pink-dark: #DD6780;
   --pink-light: #FEC2CF;
+}
 
 * {
   margin: 0;
@@ -444,5 +445,66 @@ body {
     flex-direction: column;
     gap: 10px;
   }
+}
+
+@media (max-width: 900px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .resume-section,
+  .certifications-section {
+    width: 90%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .resume-section ul,
+  .certifications-section ul {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .resume-section h2,
+  .certifications-section h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .resume-section li,
+  .certifications-section li {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+
+.hero {
+  min-height: 100vh;              
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;           
+  margin-top: -45px;       
+  padding: 0 20px;
+  text-align: center;
 }
 }
